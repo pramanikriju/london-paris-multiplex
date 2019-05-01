@@ -3489,3 +3489,7 @@ input, select, textarea {
 .text-success{
     color: #2196f3;
 }
+.text-purple {
+    color: #b82189;
+    font-weight: 400;
+}
