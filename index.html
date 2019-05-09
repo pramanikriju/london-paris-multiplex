@@ -23,6 +23,9 @@
 </head>
 
 <body class="is-preload">
+    <div class="" style="position: fixed;top: 0;left: 0;">
+    <img src="images/logo.png" height="100px" width="100px">
+    </div>
 
     <!-- Header -->
     <section id="header">
@@ -51,7 +54,7 @@
 
                     <button id="collapsible" style="align-content: center;background:linear-gradient(45deg, #8A2387 15%, #E94057 30%, #F27121) ;color: white !important;">Learn more</button>
                     <div id="content" class="content">
-                        <p> The two-screen premium plex is owned and operated by <a href="muktigroup.in">Mukti Group</a> and is located in
+                        <p> The two-screen premium plex is owned and operated by <a href="https://muktigroup.in">Mukti Group</a> and is located in
                             the boutique mall ‘Mukti World’ in the posh area of Ballygunge in the heart of South
                             Kolkata. The theatre is an extremely popular entertainment destination among the
                             premium residents of South Kolkata and several corporate who love the personalised
@@ -157,19 +160,32 @@
                             <li><strong class="text-purple"> Excellent Audio-Visual quality</strong> - ads are played through the best technologyprojectors and sound system</li>
                             <li><strong class="text-purple"> Higher Attention Span </strong> - eyes are always towards the screen and sitting posture
                                 cannot be changed, customers are bound to see the entire ad</li>
-                            <li> <strong class="text-purple">Exclusivity</strong> - only one ad is visible at a time unlike road-side hoardings / newspaperads</li>
+                            <li> <strong class="text-purple">Exclusivity</strong> - only one ad is visible at a time unlike road-side hoardings / newspaper ads</li>
                         </ul>
                     </div>
 
                 </div>
-
-                <p>London Paris multiplex commands one of the highest ticket and F&amp;B prices in Kolkata as
+                
+                  <button id="collapsible1" style="align-content: center;background:linear-gradient(45deg, #8A2387 15%, #E94057 30%, #F27121) ;color: white !important;">Learn more</button>
+                    <div id="content1" class="content">
+                        <p> London Paris multiplex commands one of the highest ticket and F&amp;B prices in Kolkata as
                     it is located in one of the poshest areas of India – Ballygunge and is strategically located
                     near several reputed educational institutes and corporate offices. It has loyal and regular
                     clientele which include HNIs, senior corporate executives, housewives, retired citizens
                     and students.
                     Contact us now to reach out to your target audience through these other branding
                     options apart from on-screen ads:</p>
+                    </div>
+                    <script>
+                        var button = document.getElementById('collapsible1');
+                        var content = document.getElementById('content1');
+                        button.addEventListener("click", function(e) {
+                            content.style.display = "block";
+                            button.style.display = "none";
+                        }, false);
+                    </script>
+
+                <p></p>
                 <ul>
                     <li><span class="text-purple">Poster case in the multiplex lobby</span></li>
                     <li><span class="text-purple"> Standee in the multiplex lobby</span></li>
@@ -190,7 +206,10 @@
                     <br>
 
                     T&amp;C's for contests: </p>
-                <ul>
+                
+                 <button id="collapsible2" style="align-content: center;background:linear-gradient(45deg, #8A2387 15%, #E94057 30%, #F27121) ;color: white !important;">Learn More</button>
+                    <div id="content2" class="content">
+                        <p>   <ul>
                     <li>For Participants to qualify as winners, they must like the London Paris Multiplex Facebook Page & use the hashtag #LondonParisMultiplex or #LondonParis</li>
                     <li>Winners will be chosen by a Lucky Draw from the participants who are able to answer all questions correctly</li>
                     <li>The winners will be announced on our Pages and then will be asked to inbox their Personal Contact Details</li>
@@ -201,7 +220,18 @@
                     <li>The winner is only eligible to watch the movie he has won the contests for</li>
                     <li>An identity proof must be carried while redeeming the free couple movie tickets </li>
                     <li>Any other T&C specific to any contest will be communicated separately</li>
-                </ul>
+                </ul></p>
+                    </div>
+                    <script>
+                        var button = document.getElementById('collapsible2');
+                        var content = document.getElementById('content2');
+                        button.addEventListener("click", function(e) {
+                            content.style.display = "block";
+                            button.style.display = "none";
+                        }, false);
+                    </script>
+
+             
                 <br>
                 
                    <h2 class="text-purple" style="text-align: center">Offers
@@ -297,10 +327,12 @@ var map = new H.Map(
         var icon = new H.map.Icon('images/marker.png');
 
 // Create a marker using the previously instantiated icon:
-var marker = new H.map.Marker({ lat: 52.5, lng: 13.4 }, { icon: icon });
+var marker = new H.map.Marker({ lat: 22.5262, lng: 88.3643 }, { icon: icon });
 
 // Add the marker to the map:
 map.addObject(marker);
+        
+        $("a").attr("target", "_blank");
     
     
     </script>
