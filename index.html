@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+            .content {
+                display: none;
+            }
+        </style>
 </head>
 
 <body class="is-preload">
@@ -19,10 +24,12 @@
     <section id="header">
         <div class="inner">
             <span class=" fit "><img src="images/logo.png"></span>
-    
+
+            <!--
                 <ul class="actions special">
                     <li><a href="#one" class="button scrolly" style="font-size: 1.3rem;background-color: rgba(58, 55, 44, 0.75);">London Paris Multiplex</a></li>
                 </ul>
+-->
         </div>
     </section>
 
@@ -32,16 +39,31 @@
             <div class="row gtr-150">
                 <div class="col-6 col-12-medium">
                     <header class="major">
-                        <h2 class="text-purple" >About Us</h2>
+                        <h2 class="text-purple">About Us</h2>
                     </header>
                     <p>‘London Paris’ multiplex provides the ultimate movie-watching experience
                         through an advanced Dolby Digital sound system, best-in-class projectors and 3D
-                        systems, comfortable reclining seats with ample leg space and a variety of munchies.
-                        The two-screen premium plex is owned and operated by Mukti Group and is located in
-                        the boutique mall ‘Mukti World’ in the posh area of Ballygunge in the heart of South
-                        Kolkata. The theatre is an extremely popular entertainment destination among the
-                        premium residents of South Kolkata and several corporate who love the personalised
-                        service and smart movie scheduling.</p>
+                        systems, comfortable reclining seats with ample leg space and a variety of munchies.</p>
+
+                        <button id="collapsible" style="align-content: center;background:linear-gradient(45deg, #8A2387 15%, #E94057 30%, #F27121) ;color: white !important;">Learn more</button>
+                        <div id="content" class="content">
+                            <p> The two-screen premium plex is owned and operated by <a href="muktigroup.in">Mukti Group</a> and is located in
+                                the boutique mall ‘Mukti World’ in the posh area of Ballygunge in the heart of South
+                                Kolkata. The theatre is an extremely popular entertainment destination among the
+                                premium residents of South Kolkata and several corporate who love the personalised
+                                service and smart movie scheduling.</p>
+                        </div>
+                    <script>
+                        var button = document.getElementById('collapsible');
+                        var content = document.getElementById('content');
+                        button.addEventListener("click", function(e) {
+                        content.style.display = "block";
+                            button.style.display = "none";
+}, false);
+                        
+                        
+                    </script>
+
                 </div>
                 <div class="col-6 col-12-medium imp-medium">
                     <span class="image fit"><img src="images/london.jpg" alt="" /></span>
@@ -58,13 +80,15 @@
                     <ul class="major-icons">
                         <li><span class="icon style1 major fa-gift"></span></li>
                         <li><span class="icon style2 major fa-birthday-cake"></span></li>
+<!--
                         <li><span class="icon style3 major fa-camera-retro"></span></li>
                         <li><span class="icon style4 major fa-cog"></span></li>
+-->
                         <li><span class="icon style5 major fa-users"></span></li>
                         <li><span class="icon style6 major fa-calendar"></span></li>
                     </ul>
                 </div>
-                <div class="col-6 col-12-medium">
+                <div class="col-6 col-12-medium" style="padding-top: 10%;">
                     <header class="major">
                         <h2>Block Bookings &amp; Celebrations</h2>
                     </header>
@@ -73,17 +97,8 @@
                         anniversary with your near and dear ones, from watching your wedding / sangeet video
                         to your club’s get together - celebrate all these and much more. Watch the current movie
                         or choose your own.</p>
-                   
-                    <p>
-                      
-                        <h2> Events</h2>
 
-                        From customer meets to dealer / distributor engagement, from employee get-togethers
-                        to training programs, from celebration for achieving the target to product launches - look
-                        no further. Watch the latest flick or choose a motivational movie.
-                        During the event, promote your brand through an exclusive kiosk / standee space for
-                        strong &amp; clean visibility. Also, run your advertisement / announcement on screen before
-                        the movie or during the interval.</p>
+                 
                 </div>
             </div>
         </div>
@@ -99,39 +114,53 @@
             <p>Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.</p>
 -->
             <div style="text-align: left">
-                 <h2 class="text-purple" style="text-align: center"> Gifting
-                    </h2>
+                  <h2 class="text-purple" style="text-align: center">Corporate Events
+                </h2>
                 <p>
-                  Gift your customers / employees / distributors / dealers / other stakeholders a movie
-                        outing which they can enjoy with their family / friends. It gives them the flexibility to watch
-                        a movie of their choice at their convenience.
-                        London Paris multiplex has unique gifting options which can be customised based on
-                        your requirement and brand. The gift card will carry your brand’s logo and you get to
-                        choose from a wide variety of gift cards ranging from Rs. 100 to Rs. infinity with
-                        innovative options such as:<br>
-                        1 gift card = Rs. 300<br>
-                        1 gift card = 1 movie ticket + 1 popcorn and cola combo<br>
-                        ... and many more
+                    From customer meets to dealer / distributor engagement, from employee get-togethers
+                        to training programs, from celebration for achieving the target to product launches - look
+                        no further. Watch the latest flick or choose a motivational movie.
+                        During the event, promote your brand through an exclusive kiosk / standee space for
+                        strong &amp; clean visibility. Also, run your advertisement / announcement on screen before
+                        the movie or during the interval.
                 </p>
+                <h2 class="text-purple" style="text-align: center">Corporate Gifting
+                </h2>
+                <p>
+                    Gift your customers / employees / distributors / dealers / other stakeholders a movie
+                    outing which they can enjoy with their family / friends. It gives them the flexibility to watch
+                    a movie of their choice at their convenience.
+                    London Paris multiplex has unique gifting options which can be customised based on
+                    your requirement and brand. The gift card will carry your brand’s logo and you get to
+                    choose from a wide variety of gift cards ranging from Rs. 100 to Rs. infinity with
+                    innovative options such as:<br>
+                    1 gift card = Rs. 300<br>
+                    1 gift card = 1 movie ticket + 1 popcorn and cola combo<br>
+                    ... and many more
+                </p>
+                
+                 <h2 class="text-purple" style="text-align: center">Advertise with Us
+                </h2>
+            
                 <p>Multiplex on-screen advertisement is one of the hottest and fastest
                     growing media for branding and advertising. It has several advantages:</p>
                 <div class="row">
-                      <div class="col-12">
-                    <img src="images/paris.jpg" class="image fit" >
+                    <div class="col-12">
+                        <img src="images/paris.jpg" class="image fit">
                     </div>
                     <div class="col-12">
-                     <ul>
-                    <li><strong class="text-purple">Captive Audience </strong> - audience cannot switch off the ad unlike while watching TV at home</li>
-                    <li><strong class="text-purple">High Impact</strong> - ads are displayed in a dark theatre on a large screen and cannot be missed once inside the auditorium</li>
-                    <li><strong class="text-purple"> Excellent Audio-Visual quality</strong> - ads are played through the best technologyprojectors and sound system</li>
-                    <li><strong class="text-purple"> Higher Attention Span </strong> - eyes are always towards the screen and sitting posture
-                        cannot be changed, customers are bound to see the entire ad</li>
-                    <li> <strong class="text-purple">Exclusivity</strong> - only one ad is visible at a time unlike road-side hoardings / newspaperads</li>
-                </ul>
+                        <ul>
+                            <li><strong class="text-purple">Captive Audience </strong> - audience cannot switch off the ad unlike while watching TV at home</li>
+                            <li><strong class="text-purple">High Impact</strong> - ads are displayed in a dark theatre on a large screen and cannot be missed once inside the auditorium</li>
+                            <li><strong class="text-purple"> Excellent Audio-Visual quality</strong> - ads are played through the best technologyprojectors and sound system</li>
+                            <li><strong class="text-purple"> Higher Attention Span </strong> - eyes are always towards the screen and sitting posture
+                                cannot be changed, customers are bound to see the entire ad</li>
+                            <li> <strong class="text-purple">Exclusivity</strong> - only one ad is visible at a time unlike road-side hoardings / newspaperads</li>
+                        </ul>
                     </div>
-                  
+
                 </div>
-               
+
                 <p>London Paris multiplex commands one of the highest ticket and F&amp;B prices in Kolkata as
                     it is located in one of the poshest areas of India – Ballygunge and is strategically located
                     near several reputed educational institutes and corporate offices. It has loyal and regular
@@ -143,15 +172,15 @@
                     <li><span class="text-purple">Poster case in the multiplex lobby</span></li>
                     <li><span class="text-purple"> Standee in the multiplex lobby</span></li>
                     <li><span class="text-purple"> Multiplex lobby hoardings</span></li>
-                    <li ><span class="text-purple">Washroom branding</span></li>
+                    <li><span class="text-purple">Washroom branding</span></li>
                     <li><span class="text-purple">Leaflet distribution along with movie tickets</span></li>
-                    <li ><span class="text-purple"> Movie ticket jacket</span></li>
+                    <li><span class="text-purple"> Movie ticket jacket</span></li>
                 </ul>
                 <br>
                 <div class="" style="text-align: center">
-                     <a href="https://in.bookmyshow.com/buytickets/london-paris-mukti-world-ballygunge/cinema-kolk-LPKK-MT/20190426" class="button wide primary" style="align-content: center;background:linear-gradient(45deg, #8A2387 15%, #E94057 30%, #F27121) ; margin-bottom: 30px;">Book Tickets Now</a>
+                    <a href="https://in.bookmyshow.com/buytickets/london-paris-mukti-world-ballygunge/cinema-kolk-LPKK-MT/20190426" class="button wide primary" style="align-content: center;background:linear-gradient(45deg, #8A2387 15%, #E94057 30%, #F27121) ; margin-bottom: 30px;">Book Tickets Now</a>
                 </div>
-               
+
             </div>
         </div>
     </section>
@@ -178,15 +207,17 @@
     <!-- Footer -->
     <section id="footer">
         <ul class="icons">
-           <li><a href="https://twitter.com/LondonParisKol" class="icon fa-twitter"><span class="label" style="color: wheat;">Twitter</span></a></li>
-                <li><a href="https://www.facebook.com/LondonParisMultiplexKolkata/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                <li><a href="https://www.instagram.com/londonparismultiplex/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="mailto:info@muktigroup.in" class="icon fa-envelope"><span class="label">Mail</span></a></li>
+            <li><a href="https://twitter.com/LondonParisKol" class="icon fa-twitter"><span class="label" style="color: wheat;">Twitter</span></a></li>
+            <li><a href="https://www.facebook.com/LondonParisMultiplexKolkata/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="https://www.instagram.com/londonparismultiplex/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="mailto:info@muktigroup.in" class="icon fa-envelope"><span class="label">Mail</span></a></li>
         </ul><br>
         <p>Mukti World, 9/3B Gariahat Road, Kolkata-700019
-<br>033 4060 7379 / 80</p>
+            <br>033 4060 7379 / 80</p>
         <ul class="copyright">
-            <li>&copy;  <script>document.write(new Date().getFullYear())</script> <a href="http://duotoneinc.com/"> Duotone Inc</li>
+            <li>&copy; <script>
+                    document.write(new Date().getFullYear())
+                </script> <a href="http://duotoneinc.com/"> Duotone Inc</li>
             <li style="display: none">Design: <a href="http://riju.co">Riju Pramanik</a></li>
         </ul>
     </section>
