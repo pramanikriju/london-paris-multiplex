@@ -20,11 +20,40 @@
   type="text/javascript" charset="utf-8"></script>
 <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js"
   type="text/javascript" charset="utf-8"></script>
+        
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        
 </head>
 
 <body class="is-preload">
     <div class="" style="position: fixed;top: 0;left: 0;">
     <img src="images/logo.png" height="100px" width="100px">
+    </div>
+    <div class="" style="position: fixed;top: 0;right: 0;background:linear-gradient(45deg, #8A2387 15%, #E94057 30%, #F27121) ;color: white !important;padding: .2rem;">
+    <a href="tel:123456781.90">Telebook Now</a> 
+        <br>
+       
+        
+    </div>
+     <div class="" style="position: fixed;top: 150px;right: 0;">
+          <a href="https://twitter.com/LondonParisKol" class="icon fa-twitter" style="color: purple;"><span class="label" style="color: purple;">Twitter</span></a>
+         <br>
+         <a href="https://www.facebook.com/LondonParisMultiplexKolkata/" class="icon fa-facebook" style="color: purple;"><span class="label">Facebook</span></a>
+         <br>
+             <a href="https://www.instagram.com/londonparismultiplex/" class="icon fa-instagram" style="color: purple;"><span class="label">Instagram</span></a>
+    
     </div>
 
     <!-- Header -->
@@ -52,17 +81,16 @@
                         through an advanced Dolby Digital sound system, best-in-class projectors and 3D
                         systems, comfortable reclining seats with ample leg space and a variety of munchies.</p>
 
-                    <button id="collapsible" style="align-content: center;background:linear-gradient(45deg, #8A2387 15%, #E94057 30%, #F27121) ;color: white !important;">Learn more</button>
-                    <div id="content" class="content">
-                        <p> The two-screen premium plex is owned and operated by <a href="https://muktigroup.in">Mukti Group</a> and is located in
-                            the boutique mall ‘Mukti World’ in the posh area of Ballygunge in the heart of South
+                    <button id="collapsible3" style="align-content: center;background:linear-gradient(45deg, #8A2387 15%, #E94057 30%, #F27121) ;color: white !important;margin-bottom: 10%;">Learn more</button><br>
+                    <div id="content3" class="content">
+                        <p> The two-screen premium plex is owned and operated by <a href="https://muktigroup.in" target="_blank">Mukti Group</a> and is located in                            the boutique mall ‘Mukti World’ in the posh area of Ballygunge in the heart of South
                             Kolkata. The theatre is an extremely popular entertainment destination among the
                             premium residents of South Kolkata and several corporate who love the personalised
                             service and smart movie scheduling.</p>
                     </div>
                     <script>
-                        var button = document.getElementById('collapsible');
-                        var content = document.getElementById('content');
+                        var button = document.getElementById('collapsible3');
+                        var content = document.getElementById('content3');
                         button.addEventListener("click", function(e) {
                             content.style.display = "block";
                             button.style.display = "none";
@@ -147,13 +175,14 @@
                 <h2 class="text-purple" style="text-align: center">Advertise with Us
                 </h2>
 
-                <p>Multiplex on-screen advertisement is one of the hottest and fastest
-                    growing media for branding and advertising. It has several advantages:</p>
+               
                 <div class="row">
                     <div class="col-12">
                         <img src="images/paris.jpg" class="image fit">
                     </div>
                     <div class="col-12">
+                         <p>Multiplex on-screen advertisement is one of the hottest and fastest
+                    growing media for branding and advertising. It has several advantages:</p>
                         <ul>
                             <li><strong class="text-purple">Captive Audience </strong> - audience cannot switch off the ad unlike while watching TV at home</li>
                             <li><strong class="text-purple">High Impact</strong> - ads are displayed in a dark theatre on a large screen and cannot be missed once inside the auditorium</li>
@@ -264,7 +293,7 @@
                 <h2>Careers</h2>
             </header>
             <p>If you would like to join a dynamic and fast growing organisation and have a
-                fire burning inside you, do send your profile to hrd@muktigroup.in. We are currently
+                fire burning inside you, do send your profile to <a href="mailto:hrd@muktigroup.in" target="_blank">this email</a>. We are currently
                 hiring for exciting talent in the Operations and Sales teams.</p>
             <!--
             <ul class="actions special">
@@ -332,7 +361,7 @@ var marker = new H.map.Marker({ lat: 22.5262, lng: 88.3643 }, { icon: icon });
 // Add the marker to the map:
 map.addObject(marker);
         
-        $("a").attr("target", "_blank");
+//        $("a").attr("target", "_blank");
     
     
     </script>
