@@ -102,7 +102,7 @@
     </div>
 
     <!-- Header -->
-    <section id="header" >
+    <section id="header" style="margin-bottom: -8%;background: #ffffff;">
         <div class="inner">
 <!--            <span class=" fit "><img src="images/logo.png"></span>-->
 
@@ -112,6 +112,9 @@
                 </ul>
 -->
         </div>
+    </section>
+    <section id="slides" style="min-height: 400px;"> 
+    
     </section>
 
     <!-- One -->
@@ -451,11 +454,24 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+  <script>
+        $("#slides").backstretch([
+            "images/slides/1.jpg",
+            "images/slides/2.jpg",
+            "images/slides/3.jpg",
+            "images/slides/4.jpg",
+        ], {
+            duration: 3000,
+            fade: 750
+        });
+    </script>
 
     <script>
         var platform = new H.service.Platform({
             'app_id': 'qlZo2tXMmg7lt0ygBwIk',
-            'app_code': 'pPQnak5LYxNf7jyFPkLQVg'
+            'app_code': 'pPQnak5LYxNf7jyFPkLQVg',
+            'useHTTPS': true
         });
         var defaultLayers = platform.createDefaultLayers();
 
@@ -512,18 +528,7 @@ window.onclick = function(event) {
 }
 
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
-  <script>
-        $("#header").backstretch([
-            "images/slides/1.jpg",
-            "images/slides/2.jpg",
-            "images/slides/3.jpg",
-            "images/slides/4.jpg",
-        ], {
-            duration: 3000,
-            fade: 750
-        });
-    </script>
+   
 
 </body>
 
