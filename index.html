@@ -34,17 +34,59 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <style>
+        .backstretch img 
+        {
+            object-fit: contain;
+        }
+    /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}</style>
 
 </head>
 
 <body class="is-preload">
-    <div class="" style="position: fixed;top: 0;left: 0;z-index: 9999;">
+    <div class="" style="position: fixed;top: 0;left: 10%;z-index: 9999;">
         <img src="images/logo.png" height="100px" width="100px">
     </div>
     <div class="" style="position: fixed;top: 0;right: 0;background:linear-gradient(45deg, #8A2387 15%, #E94057 30%, #F27121) ;color: white !important;padding: .2rem; z-index: 9999;">
-        <a href="tel:+91-9830585815"><i class="fa fa-phone"></i> Telebook Now +91-9830585815</a><br>
+        <a href="tel:+91-9830585815"><i class="fa fa-phone"></i> Telebook Now <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9830 5858 15</a><br>
         
-          <a href="https://in.bookmyshow.com/buytickets/london-paris-mukti-world-ballygunge/cinema-kolk-LPKK-MT/20190426" target="_blank" class=" wide " >Book Tickets Now</a>
+          <a href="https://in.bookmyshow.com/buytickets/london-paris-mukti-world-ballygunge/cinema-kolk-LPKK-MT/20190426" target="_blank" class=" wide " ><i class="fa fa-ticket"></i> Book Tickets Now</a>
 
 
     </div>
@@ -60,9 +102,9 @@
     </div>
 
     <!-- Header -->
-    <section id="header">
+    <section id="header" >
         <div class="inner">
-            <span class=" fit "><img src="images/logo.png"></span>
+<!--            <span class=" fit "><img src="images/logo.png"></span>-->
 
             <!--
                 <ul class="actions special">
@@ -113,7 +155,7 @@
                     </script>
 
                 </div>
-                <div class="col-6 col-12-medium imp-medium">
+                <div class="col-6 col-12-medium ">
                     <span class="image fit"><img src="images/london.jpg" alt="" /></span>
                 </div>
             </div>
@@ -124,20 +166,20 @@
     <section id="two" class="main style2" style="background: linear-gradient(45deg, #8A2387 15%, #E94057 30%, #F27121)	">
         <div class="container">
             <div class="row gtr-150">
+<!--
                 <div class="col-6 col-12-medium">
                     <ul class="major-icons">
                         <li><span class="icon style1 major fa-gift"></span></li>
                         <li><span class="icon style2 major fa-birthday-cake"></span></li>
-                        <!--
-                        <li><span class="icon style3 major fa-camera-retro"></span></li>
-                        <li><span class="icon style4 major fa-cog"></span></li>
--->
+                   
                         <li><span class="icon style5 major fa-users"></span></li>
                         <li><span class="icon style6 major fa-calendar"></span></li>
                     </ul>
                 </div>
-                <div class="col-6 col-12-medium" style="padding-top: 10%;">
-                    <header class="major">
+-->
+                <div class="col-12 col-12-medium" style="">
+                    <header class="major" style="text-align: center;">
+                        <img src="images/theatre.png" class="image " height="100px;" width="100px;">
                         <h2>Block Bookings &amp; Celebrations</h2>
                     </header>
                     <p>From birthdays of six-year olds to those turning
@@ -161,6 +203,9 @@
             </header>
             <p>Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.</p>
 -->
+            <div style="text-align: center">
+            <img src="images/cinema.png" class="img" height="100px" width="100px;">
+            </div>
             <div style="text-align: left">
                 <h2 class="text-purple" style="text-align: center">Corporate Events
                 </h2>
@@ -172,6 +217,9 @@
                     strong &amp; clean visibility. Also, run your advertisement / announcement on screen before
                     the movie or during the interval.
                 </p>
+                 <div style="text-align: center">
+            <img src="images/access.png" class="img" height="100px" width="100px;">
+            </div>
                 <h2 class="text-purple" style="text-align: center">Corporate Gifting
                 </h2>
                 <p>
@@ -186,16 +234,17 @@
                     1 gift card = 1 movie ticket + 1 popcorn and cola combo<br>
                     ... and many more
                 </p>
+                
+                 <div style="text-align: center">
+            <img src="images/play.png" class="img" height="100px" width="100px;">
+            </div>
 
                 <h2 class="text-purple" style="text-align: center">Advertise with Us
                 </h2>
 
 
                 <div class="row">
-                    <div class="col-12">
-                        <img src="images/paris.jpg" class="image fit">
-                    </div>
-                    <div class="col-12">
+                       <div class="col-6 col-12-medium">
                         <p>Multiplex on-screen advertisement is one of the hottest and fastest
                             growing media for branding and advertising. It has several advantages:</p>
                         <ul>
@@ -207,6 +256,10 @@
                             <li> <strong class="text-purple">Exclusivity</strong> - only one ad is visible at a time unlike road-side hoardings / newspaper ads</li>
                         </ul>
                     </div>
+                    <div class="col-6 col-12-medium" style="text-align: center;">
+                        <img src="images/paris.jpg" class="image fit" height="400px;" style="object-fit: contain;">
+                    </div>
+                 
 
                 </div>
                 <div class="" style="text-align: center">
@@ -257,21 +310,29 @@
                 <br>
 
 
-
+                    
+                
+                 <div style="text-align: center">
+            <img src="images/contests.png" class="img" height="100px" width="100px;">
+            </div>
                 <h2 class="text-purple" style="text-align: center">Contests
                 </h2>
                 <p>
                     Follow our <a href="https://www.facebook.com/LondonParisMultiplexKolkata/" class="text-purple">Facebook</a>, <a href="https://twitter.com/LondonParisKol" class="text-purple">Twitter</a> and <a href="https://www.instagram.com/londonparismultiplex/" class="text-purple">Instagram</a> pages for contests and exciting giveaways.
                     <br>
 
-                    T&amp;C's for contests: </p>
+                  : </p>
 
                 <div class="" style="text-align: center">
-                    <button id="collapsible2" style="align-content: center;background:linear-gradient(45deg, #8A2387 15%, #E94057 30%, #F27121) ;color: white !important;">Learn more</button></div>
+                    <button id="modal" style="align-content: center;background:linear-gradient(45deg, #8A2387 15%, #E94057 30%, #F27121) ;color: white !important;">  T&amp;C's for contests</button></div>
                 <br>
-                <div id="content2" class="content">
-                    <p>
-                        <ul>
+                <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+      <h3 style="text-align: center">Terms and Conditions</h3>
+ <ul>
                             <li>For Participants to qualify as winners, they must like the London Paris Multiplex Facebook Page & use the hashtag #LondonParisMultiplex or #LondonParis</li>
                             <li>Winners will be chosen by a Lucky Draw from the participants who are able to answer all questions correctly</li>
                             <li>The winners will be announced on our Pages and then will be asked to inbox their Personal Contact Details</li>
@@ -282,38 +343,31 @@
                             <li>The winner is only eligible to watch the movie he has won the contests for</li>
                             <li>An identity proof must be carried while redeeming the free couple movie tickets </li>
                             <li>Any other T&C specific to any contest will be communicated separately</li>
-                        </ul>
-                    </p>
-                </div>
-                <script>
-                    var button2 = document.getElementById('collapsible2');
-                    var content2 = document.getElementById('content2');
-                    button2.addEventListener("click", function(e) {
-                        content2.style.display = "block";
-                        button2.style.display = "none";
-                    }, false);
+                        </ul>  </div>
 
-                </script>
+</div>
+           
+      
 
 
-                <br>
+                
+                 <div style="text-align: center">
+            <img src="images/offers.png" class="img" height="100px" width="100px;">
+            </div>
 
                 <h2 class="text-purple" style="text-align: center">Offers
                 </h2>
                 <p style="text-align: center;">Morning combo @ Rs.150/-
-                    <br>
-                    <br>
+                   
 
 
-                    <img class="image fit" src="images/offers.jpg">
+                    <img class="image fit" height="400px" src="images/coffee.jpg" style="object-fit: contain">
                 </p>
 
 
 
 
-                <div class="" style="text-align: center">
-                    <a href="https://in.bookmyshow.com/buytickets/london-paris-mukti-world-ballygunge/cinema-kolk-LPKK-MT/20190426" class="button wide primary" style="align-content: center;background:linear-gradient(45deg, #8A2387 15%, #E94057 30%, #F27121) ; margin-bottom: 30px;">Book Tickets Now</a>
-                </div>
+              
 
             </div>
         </div>
@@ -326,9 +380,15 @@
     <section id="four" class="main style2 special">
         <div class="container">
             <header class="major">
-                <h2>Do mail us your profile</h2>
+                
+                 <div style="text-align: center">
+            <img src="images/resume.png" class="img" height="100px" width="100px;">
+            </div>
+                <h2>Careers</h2>
             </header>
-            <p>  <a href="mailto:hrd@muktigroup.in" target="_blank">Do mail us your profile</a>
+            <p> <p>If you would like to join a dynamic and fast growing organisation and have a
+                fire burning inside you, do mail us your profile to <a href="mailto:hrd@muktigroup.in" target="_blank">this email</a>. We are currently
+                hiring for exciting talent in the Multiplex Operations and Sales team.</p></a>
             </p>
             <!--
             <ul class="actions special">
@@ -342,21 +402,15 @@
 
 
     <!-- Footer -->
-    <section id="footer">
+    <section id="footer" style="padding: 1em;">
         
           <div class="container">
             <div class="row gtr-150">
-                <div class="col-6 col-12-medium">
+                <div class="col-6 col-12-medium" style="padding-top: 4em;">
            <br>
         <p>London Paris Multiplex<br>Mukti World, 9/3B Gariahat Road, Kolkata - 700019
             <br></p>
-        <ul class="copyright">
-            <li>&copy; <script>
-                    document.write(new Date().getFullYear())
-
-                </script> <a href="http://duotoneinc.com/"> Duotone Inc</li>
-            <li style="display: none">Design: <a href="http://riju.co">Riju Pramanik</a></li>
-        </ul>
+    
 
                 </div>
                 <div class="col-6 col-12-medium imp-medium">
@@ -364,6 +418,14 @@
 
                 </div>
             </div>
+              <br>
+                  <ul class="copyright">
+            <li>&copy; <script>
+                    document.write(new Date().getFullYear())
+
+                </script> <a href="http://duotoneinc.com/"> Duotone Inc</li>
+            <li style="display: none">Design: <a href="http://riju.co">Riju Pramanik</a></li>
+        </ul>
         </div>
         
         
@@ -422,7 +484,45 @@
         map.addObject(marker);
 
         $("a").attr("target", "_blank");
+        
+        // Get the modal
+var modal = document.getElementById("myModal");
 
+// Get the button that opens the modal
+var btn = document.getElementById("modal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+  <script>
+        $("#header").backstretch([
+            "images/slides/1.jpg",
+            "images/slides/2.jpg",
+            "images/slides/3.jpg",
+            "images/slides/4.jpg",
+        ], {
+            duration: 3000,
+            fade: 750
+        });
     </script>
 
 </body>
