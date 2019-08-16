@@ -2554,6 +2554,14 @@ input, select, textarea {
 			}
 
 /* Major Icons */
+.people-suck::after {
+        background: white;
+    content: '';
+    display: inline-block;
+    height: 1px;
+    margin-top: 0em;
+    width: 6em;
+}
 
 	ul.major-icons {
 		list-style: none;
