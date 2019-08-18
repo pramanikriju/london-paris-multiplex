@@ -2361,7 +2361,7 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			margin: 0 0 2em 0;
+			margin: 0 0 0em 0;
 			width: 100%;
 		}
 
@@ -3504,4 +3504,12 @@ input, select, textarea {
 .text-purple {
     color: #b82189;
     font-weight: 400;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
