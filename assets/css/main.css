@@ -2897,7 +2897,7 @@ input, select, textarea {
 
 	#header {
 		padding: 9em 0 9em 0 ;
-        background: url('images/bg.jpg');
+        background: none;
         background-repeat: no-repeat;
         background-size: cover;
 	
@@ -3059,6 +3059,7 @@ input, select, textarea {
 			}
 
 		#header:after {
+/*
 			-moz-transition: opacity 1s ease;
 			-webkit-transition: opacity 1s ease;
 			-ms-transition: opacity 1s ease;
@@ -3071,6 +3072,7 @@ input, select, textarea {
 			position: absolute;
 			top: 0;
 			width: 100%;
+*/
 		}
 
 	body.is-preload #header .inner {
@@ -3224,7 +3226,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				padding: 6em 0 6em 0 ;
+				padding: 3em 0 3em 0 ;
 			}
 
 	}
