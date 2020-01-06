@@ -3515,3 +3515,7 @@ input, select, textarea {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+.m-3 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
